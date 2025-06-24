@@ -389,16 +389,17 @@ export default function Home() {
               >
               <div className="team-image">
                   <img
-                    src="https://static.vecteezy.com/system/resources/previews/006/026/787/non_2x/avatar-profile-default-social-media-photo-icon-in-flat-style-vector.jpg"
+                    
+                    src="../public/Raxmatjon.jpg"
                     alt="Umarov Raxmadjon"
                   />
                 </div>
                 <div className="team-info">
                   <h3 className="team-name">Umarov Raxmadjon</h3>
-                  <p className="team-role">Katta santexnik va Yetakchi</p>
+                  <p className="team-role">Lider va Yetakchi</p>
                   <div className="team-badges">
                     <span className="team-badge">Sertifikatlangan</span>
-                    <span className="team-badge">4+ yil</span>
+                    <span className="team-badge">5+ yil</span>
                   </div>
                 </div>
               </div>
@@ -411,14 +412,58 @@ export default function Home() {
                 <div className="team-image">
                   <img
                     src="https://static.vecteezy.com/system/resources/previews/006/026/787/non_2x/avatar-profile-default-social-media-photo-icon-in-flat-style-vector.jpg"
-                    alt="Umarov Axmadjon"
+                    alt="Zoirov Abduvohid"
                   />
                 </div>
                 <div className="team-info">
-                  <h3 className="team-name">Umarov Abduvohid</h3>
+                  <h3 className="team-name">Zoirov Abduvohid</h3>
                   <p className="team-role">Yordamchi Shogird</p>
                   <div className="team-badges">
+                    <span className="team-badge">Oddiy Usta</span>
+                    <span className="team-badge">2+ yil</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div
+                className="team-card"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div className="team-image">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/006/026/787/non_2x/avatar-profile-default-social-media-photo-icon-in-flat-style-vector.jpg"
+                    alt="Zoirov Abduvohid"
+                  />
+                </div>
+                <div className="team-info">
+                  <h3 className="team-name">Abdusattorov Abdunosir</h3>
+                  <p className="team-role">Usta Santexnik</p>
+                  <div className="team-badges">
                     <span className="team-badge">Ekspert</span>
+                    <span className="team-badge">5+ yil</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div
+                className="team-card"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div className="team-image">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/006/026/787/non_2x/avatar-profile-default-social-media-photo-icon-in-flat-style-vector.jpg"
+                    alt="Zoirov Abduvohid"
+                  />
+                </div>
+                <div className="team-info">
+                  <h3 className="team-name">Laziz</h3>
+                  <p className="team-role">Yordamchi Shogird</p>
+                  <div className="team-badges">
+                    <span className="team-badge">Oddiy Usta</span>
                     <span className="team-badge">2+ yil</span>
                   </div>
                 </div>

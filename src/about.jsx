@@ -298,7 +298,7 @@ export default function About() {
               >
                 <div className="team-detailed-image">
                   <img
-                    src="https://static.vecteezy.com/system/resources/previews/006/026/787/non_2x/avatar-profile-default-social-media-photo-icon-in-flat-style-vector.jpg"
+                    src="../public/Raxmatjon.jpg"
                     alt="Umarov Raxmadjon"
                   />
                 </div>
@@ -332,7 +332,7 @@ export default function About() {
                   />
                 </div>
                 <div className="team-detailed-info">
-                  <h3 className="team-detailed-name">Umarov Abduvohid</h3>
+                  <h3 className="team-detailed-name">Zoirov Abduvohid</h3>
                   <p className="team-detailed-role">Yordamchi Shogird</p>
                   <p className="team-detailed-bio">
                     Murakkab o'rnatishlar va favqulodda xizmatlar bo'yicha

@@ -112,6 +112,9 @@ export default function Project() {
       category: "Kompleks",
       duration: "O'zgaruvchan",
     },
+
+
+
   ];
 
   return (
