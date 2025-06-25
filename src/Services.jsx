@@ -155,7 +155,7 @@ export default function Services() {
                 </Link>
       
                 <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  <button className="cta-button primary">
+                  <button  className="cta-button primary">
                     Buyurtma berish
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                       <path
@@ -233,7 +233,7 @@ export default function Services() {
                   <h3 className="service-title">{service.title}</h3>
                   <p className="service-description">{service.description}</p>
                   <Link to="/contact" className="service-action">
-                    <button className="cta-button secondary">
+                    <button style={{color:"blue"}} className="cta-button secondary">
                       Buyurtma berish
                       <svg
                         width="16"

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
 import "./contact.css";
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -62,7 +62,7 @@ export default function Contact() {
         (error) => {
           console.error("Geolokatsiya xatosi:", error);
           sendMessage("Joylashuv olinmadi");
-        },
+        }
       );
     } else {
       sendMessage("Brauzer geolokatsiyani qo'llamaydi");
@@ -110,72 +110,88 @@ export default function Contact() {
   return (
     <div className="luxury-container">
       {/* Premium Navigation */}
-       <header className="luxury-header" data-aos="fade-down">
-            <div className="luxury-header-content">
-              <div className="luxury-logo">
-                <span className="logo-text">RyUmarov</span>
-              </div>
-      
-              <nav className={`luxury-nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
-                <Link
-                  className={`nav-item ${location.pathname === "/" ? "active-link" : ""}`}
-                  to="/"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bosh sahifa
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/about" ? "active-link" : ""}`}
-                  to="/about"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Biz haqimizda
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/services" ? "active-link" : ""}`}
-                  to="/services"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Xizmatlar
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/project" ? "active-link" : ""}`}
-                  to="/project"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Loyihalar
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/contact" ? "active-link" : ""}`}
-                  to="/contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bog'lanish
-                </Link>
-      
-                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  <button className="cta-button primary">
-                    Buyurtma berish
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M7 17L17 7M17 7H7M17 7V17"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </Link>
-              </nav>
-      
-              <button className="mobile-toggle" onClick={toggleMobileMenu}>
-                <span className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}></span>
-                <span className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}></span>
-                <span className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}></span>
+      <header className="luxury-header" data-aos="fade-down">
+        <div className="luxury-header-content">
+          <div className="luxury-logo">
+            <span className="logo-text">RyUmarov</span>
+          </div>
+
+          <nav className={`luxury-nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
+            <Link
+              className={`nav-item ${
+                location.pathname === "/" ? "active-link" : ""
+              }`}
+              to="/"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Bosh sahifa
+            </Link>
+            <Link
+              className={`nav-item ${
+                location.pathname === "/about" ? "active-link" : ""
+              }`}
+              to="/about"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Biz haqimizda
+            </Link>
+            <Link
+              className={`nav-item ${
+                location.pathname === "/services" ? "active-link" : ""
+              }`}
+              to="/services"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Xizmatlar
+            </Link>
+            <Link
+              className={`nav-item ${
+                location.pathname === "/project" ? "active-link" : ""
+              }`}
+              to="/project"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Loyihalar
+            </Link>
+            <Link
+              className={`nav-item ${
+                location.pathname === "/contact" ? "active-link" : ""
+              }`}
+              to="/contact"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Bog'lanish
+            </Link>
+
+            <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+              <button className="cta-button primary">
+                Buyurtma berish
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M7 17L17 7M17 7H7M17 7V17"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </button>
-            </div>
-          </header>
+            </Link>
+          </nav>
+
+          <button className="mobile-toggle" onClick={toggleMobileMenu}>
+            <span
+              className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}
+            ></span>
+            <span
+              className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}
+            ></span>
+            <span
+              className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}
+            ></span>
+          </button>
+        </div>
+      </header>
 
       <main>
         {/* Page Hero */}
@@ -229,7 +245,10 @@ export default function Contact() {
                   To'g'ridan-to'g'ri qo'ng'iroq qiling va darhol maslahat oling
                 </p>
                 <a href="tel:+998881395511" className="method-action">
-                  <button style={{color:"blue"}} className="cta-button primary">
+                  <button
+                    style={{ color: "blue" }}
+                    className="cta-button primary"
+                  >
                     +998 88-139-55-11
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                       <path
@@ -260,7 +279,10 @@ export default function Contact() {
                   Telegram orqali tez va qulay muloqot qiling
                 </p>
                 <a href="https://t.me/Ry_umaroff" className="method-action">
-                  <button style={{color:"blue"}} className="cta-button secondary">
+                  <button
+                    style={{ color: "blue" }}
+                    className="cta-button secondary"
+                  >
                     Telegram
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                       <path
@@ -288,10 +310,13 @@ export default function Contact() {
                 </div>
                 <h3 className="method-title">Pastdagi form orqali</h3>
                 <p className="method-description">
-                  Pasdagi formni toliq toldiring va Yuborish tugmasini Bosing 
+                  Pasdagi formni toliq toldiring va Yuborish tugmasini Bosing
                 </p>
                 <div className="method-action">
-                  <button style={{color:'blue'}} className="cta-button secondary">
+                  <button
+                    style={{ color: "blue" }}
+                    className="cta-button secondary"
+                  >
                     Form Pasda
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
                       <path
@@ -415,7 +440,9 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className={`cta-button primary large form-submit ${isSubmitting ? "submitting" : ""}`}
+                    className={`cta-button primary large form-submit ${
+                      isSubmitting ? "submitting" : ""
+                    }`}
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Yuborilmoqda..." : "Buyurtma yuborish"}
@@ -508,14 +535,11 @@ export default function Contact() {
                       <span>Tez aloqa uchun</span>
                     </div>
                   </div>
-
-                 
                 </div>
               </div>
 
               <div className="contact-map" data-aos="fade-left">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1498.4865156052913!2d69.0264266!3d41.3094503!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bfe2c9dfdb7%3A0x4e70e6b88f98e874!2sMARS%20IT%20Tinchlik!5e0!3m2!1suz!2s!4v1748766587108!5m2!1suz!2s"
                   width="100%"
                   height="100%"
                   style={{ border: 0, borderRadius: "15px" }}
@@ -523,7 +547,9 @@ export default function Contact() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Umarov Santexnika joylashuvi"
-                />
+                  src="https://yandex.com/map-widget/v1/?um=constructor%3A05c63934b60b1226676e1f9087510808eff116611b58c74c26ef64f061a88e11&amp;source=constructor"
+                  frameborder="0"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -556,8 +582,6 @@ export default function Contact() {
                 </p>
               </div>
 
-             
-
               <div className="faq-item" data-aos="zoom-in" data-aos-delay="400">
                 <h3 className="faq-question">24/7 xizmat ko'rsatasizlarmi?</h3>
                 <p className="faq-answer">
@@ -576,7 +600,6 @@ export default function Contact() {
           <div className="footer-main">
             <div className="footer-brand">
               <div className="footer-logo">
-                
                 <span className="footer-brand-name">RyUmarov</span>
               </div>
               <p className="footer-description">

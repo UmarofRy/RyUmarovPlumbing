@@ -418,7 +418,7 @@ export default function Project() {
           <div className="section-container">
             <div className="commercial-content" data-aos="zoom-out-right">
               <div className="commercial-image">
-                <img src="../public/bg.png" alt="Tijorat Xizmati" />
+                <img src="https://yt3.ggpht.com/PMpB3tEya726pcIvC-0j80NqARbPiS4swMtkcptXp1KYQw3aN6VlC4MTcL8CUSQYYybStt93pe-Ni6U=s630-rw-nd-v1" alt="Tijorat Xizmati" />
               </div>
               <div className="commercial-text">
                 <h2>Tijorat Xizmatlari</h2>

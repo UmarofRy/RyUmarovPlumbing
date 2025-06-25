@@ -157,7 +157,7 @@ export default function About() {
               <div className="story-visual" data-aos="fade-left">
                 <div className="story-image-container">
                   <img
-                    src="../public/bg.png"
+                    src="https://yt3.ggpht.com/PMpB3tEya726pcIvC-0j80NqARbPiS4swMtkcptXp1KYQw3aN6VlC4MTcL8CUSQYYybStt93pe-Ni6U=s630-rw-nd-v1"
                     alt="Bizning Ustaxonamiz"
                     className="story-image"
                   />
