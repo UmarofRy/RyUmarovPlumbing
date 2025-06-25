@@ -390,7 +390,7 @@ export default function Home() {
               <div className="team-image">
                   <img
                     
-                    src="../public/Raxmatjon.jpg"
+                    src="https://yt3.ggpht.com/IDFZArH57JhEAI34xelQvriSbWjHC3hG7abmjRQtrXvT1XLtjdZjzDL1-ZekBXvOj6EW_cXx1GFPlQ=s492-c-fcrop64=1,31f60000ce09ffff-rw-nd-v1"
                     alt="Umarov Raxmadjon"
                   />
                 </div>

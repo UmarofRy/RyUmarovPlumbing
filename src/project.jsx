@@ -108,7 +108,7 @@ export default function Project() {
       description:
         "Kran oqyaptimi? Quvur singdimi? Qaysi muammo bo'lishidan qat'i nazar — biz hal qilamiz",
       image:
-        "https://static.vecteezy.com/system/resources/previews/011/248/016/non_2x/plumbing-logo-design-business-template-illustration-of-faucet-plumbing-home-logo-design-template-free-vector.jpg",
+        "../public/WaterTechLogo.jpg",
       category: "Kompleks",
       duration: "O'zgaruvchan",
     },
