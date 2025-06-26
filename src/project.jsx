@@ -120,72 +120,83 @@ export default function Project() {
   return (
     <div className="luxury-container">
       {/* Premium Navigation */}
-       <header className="luxury-header" data-aos="fade-down">
-            <div className="luxury-header-content">
-              <div className="luxury-logo">
-                <span className="logo-text">RyUmarov</span>
-              </div>
-      
-              <nav className={`luxury-nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
-                <Link
-                  className={`nav-item ${location.pathname === "/" ? "active-link" : ""}`}
-                  to="/"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bosh sahifa
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/about" ? "active-link" : ""}`}
-                  to="/about"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Biz haqimizda
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/services" ? "active-link" : ""}`}
-                  to="/services"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Xizmatlar
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/project" ? "active-link" : ""}`}
-                  to="/project"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Loyihalar
-                </Link>
-                <Link
-                  className={`nav-item ${location.pathname === "/contact" ? "active-link" : ""}`}
-                  to="/contact"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Bog'lanish
-                </Link>
-      
-                <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                  <button className="cta-button primary">
-                    Buyurtma berish
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
-                      <path
-                        d="M7 17L17 7M17 7H7M17 7V17"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </Link>
-              </nav>
-      
-              <button className="mobile-toggle" onClick={toggleMobileMenu}>
-                <span className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}></span>
-                <span className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}></span>
-                <span className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}></span>
-              </button>
-            </div>
-          </header>
+         <header className="modern-header" data-aos="fade-down">
+           <div className="header-content">
+             <div className="logo">
+               <span className="logo-text gradient-text">@hadiw_me</span>
+             </div>
+   
+             <nav className={`main-nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
+               <Link
+                 className={`nav-link ${location.pathname === "/" ? "active" : ""}`}
+                 to="/"
+                 onClick={() => setIsMobileMenuOpen(false)}
+               >
+                 Home
+               </Link>
+               <Link
+                 className={`nav-link ${location.pathname === "/about" ? "active" : ""}`}
+                 to="/about"
+                 onClick={() => setIsMobileMenuOpen(false)}
+               >
+                 About
+               </Link>
+               <Link
+                 className={`nav-link ${location.pathname === "/videos" ? "active" : ""}`}
+                 to="/videos"
+                 onClick={() => setIsMobileMenuOpen(false)}
+               >
+                 Blogs
+               </Link>
+               <Link
+                 className={`nav-link ${location.pathname === "/projects" ? "active" : ""}`}
+                 to="/projects"
+                 onClick={() => setIsMobileMenuOpen(false)}
+               >
+                 Project
+               </Link>
+               <Link
+                 className={`nav-link ${location.pathname === "/contact" ? "active" : ""}`}
+                 to="/contact"
+                 onClick={() => setIsMobileMenuOpen(false)}
+               >
+                 Bog'lanish
+               </Link>
+   
+               
+               <a
+                 href="https://youtube.com/@hadiw_me."
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="modern-btn btn-youtube"
+                 onClick={() => setIsMobileMenuOpen(false)}
+               >
+                 YouTube sahifam
+                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                   <path
+                     d="M7 17L17 7M17 7H7M17 7V17"
+                     stroke="currentColor"
+                     strokeWidth="2"
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                   />
+                 </svg>
+               </a>
+             </nav>
+   
+             <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+               <span
+                 className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}
+               ></span>
+               <span
+                 className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}
+               ></span>
+               <span
+                 className={`hamburger-line ${isMobileMenuOpen ? "active" : ""}`}
+               ></span>
+             </button>
+           </div>
+         </header>  
 
       <main>
         {/* Page Hero */}
